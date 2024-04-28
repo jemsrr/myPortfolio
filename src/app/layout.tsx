@@ -1,8 +1,12 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { League_Spartan } from "next/font/google";
+import AnimatedCursor from "react-animated-cursor";
+import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
 import "./globals.css";
+import SocialME from "./components/SocialME";
 
-const inter = Inter({ subsets: ["latin"] });
+const league_Spartan = League_Spartan({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -16,7 +20,19 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={`${league_Spartan.className} bg-slate-900`}>
+        <AnimatedCursor
+          color="0, 255, 255"
+          innerSize={15}
+          innerScale={1.5}
+          outerSize={25}
+          outerScale={2}
+        />
+        <Navbar />
+        <SocialME />
+        <main>{children}</main>
+        <Footer />
+      </body>
     </html>
   );
 }
