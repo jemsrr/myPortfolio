@@ -22,7 +22,6 @@ export default function Home() {
                 loop={true}
                 typeSpeed={100}
                 deleteSpeed={100}
-                cursor={true}
                 cursorStyle="|"
               />
             </h1>
