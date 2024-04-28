@@ -1,13 +1,14 @@
 "use client";
 import Image from "next/image";
+import img from "@/app/assets/profile.png";
 import { Typewriter } from "react-simple-typewriter";
 
 export default function Home() {
   return (
     <main className=" w-screen h-screen px-[5%] sm:px-[10%] py-20 ">
       <div className="flex flex-col gap-10 w-full h-full relative">
-        <div className=" w-[100%] md:w-[50%] h-full p-6 sm:p-10">
-          <div className="bg-zinc-800 h-full w-full"></div>
+        <div className="grid place-content-center w-[100%] md:w-[50%] h-full p-6 sm:p-10">
+          <Image src={img} alt="" className="rounded-full p-4 opacity-90 bg-gradient-to-tl from-slate-950 to-slate-700 animate-[fadeLeft_2s_ease-out]"/>
         </div>
         <div className="text-white absolute bottom-[20%] left-[50%] translate-x-[-50%] md:bottom-[40%] md:right-[20%] md:translate-x-0 animate-[fadeRight_3s_ease-out]">
           <pre className="text-sm sm:text-xl lg:text-2xl font-semibold">
