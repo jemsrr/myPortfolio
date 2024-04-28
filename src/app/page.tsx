@@ -27,7 +27,7 @@ export default function Home() {
             </h1>
           </pre>
         </div>
-        <div className="flex justify-center items-center font-extrabold text-xl sm:text-3xl lg:text-5xl text-green-600 py-4 tracking-wide absolute bottom-0 w-full animate-[fadeDown_2s_ease-out]">
+        <div className="flex justify-center items-center font-extrabold text-xl sm:text-3xl lg:text-5xl text-green-600 py-4 tracking-wide absolute bottom-4 md:bottom-0 w-full animate-[fadeDown_2s_ease-out]">
           <Typewriter
             words={[
               "Fullstack web-developer",
