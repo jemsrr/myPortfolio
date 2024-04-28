@@ -2,14 +2,15 @@
 import Link from "next/link";
 import { useState } from "react";
 import { HiMenuAlt2 } from "react-icons/hi";
+import i from '../assets/i.png'
 
 const Navbar = () => {
   const [showMenu, setShowMenu] = useState(false);
   return (
-    <div className="relative">
+    <div className="relative z-10">
       <nav className=" bg-slate-900 bg-opacity-90 flex justify-between items-center px-[5%] sm:px-[10%] py-10 fixed top-0 w-full animate-[fadeUp_2s_ease-out]">
         <div className=" flex justify-start gap-3 text-2xl font-medium cursor-pointer ">
-          <h1 className="text-white text-xl sm:text-3xl font-bold ">
+          <h1 className="text-white text-xl sm:text-3xl font-bold">
             JEMS <span className=" text-slate-500">RAKHOLIYA</span>
           </h1>
         </div>
