@@ -19,7 +19,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" className="scroll-smooth">
       <body className={`${league_Spartan.className} bg-slate-900`}>
         <AnimatedCursor
           color="0, 255, 255"
