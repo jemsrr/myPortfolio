@@ -32,14 +32,14 @@ export const metadata: Metadata = {
     "SEO friendly websites",
   ],
   author: "Jems R Rakholiya",
-  metadataBase: new URL('https://jemsrakholiya.netlify.app/'), // Important for absolute URLs below
+  metadataBase: new URL('https://jemsrakholiya.netlify.app'), // Important for absolute URLs below
   alternates: {
-    canonical: 'https://jemsrakholiya.netlify.app/',
+    canonical: 'https://jemsrakholiya.netlify.app',
   },
   openGraph: {
     title: "Jems R Rakholiya | Full-Stack Developer & Web Enthusiast",
     description: "Explore the portfolio of Jems Rakholiya, a passionate Full-Stack Developer specializing in React, Next.js, Node.js, and modern web technologies.",
-    url: "https://jemsrakholiya.netlify.app/", // Your website's URL
+    url: "https://jemsrakholiya.netlify.app", // Your website's URL
     siteName: "Jems Rakholiya's Portfolio",
     locale: "en_US",
     type: "website", // Or "profile" if it's primarily a personal profile
