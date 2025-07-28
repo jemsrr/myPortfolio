@@ -13,8 +13,6 @@ export const metadata: Metadata = {
   description:
     "Explore the portfolio of Jems Rakholiya, a passionate Full-Stack Developer specializing in React, Next.js, Node.js, and modern web technologies. Offering expertise in building high-performance, SEO-friendly websites and applications. Based in Surat, Gujarat, India.",
   keywords: [
-    "Jems R Rakholiya",
-    "Jems",
     "Jems Rakholiya",
     "Full-Stack Developer",
     "Web Developer Surat",
@@ -22,6 +20,7 @@ export const metadata: Metadata = {
     "Next.js Developer",
     "Node.js Developer",
     "Software Engineer",
+    "MERN Stack Developer",
     "Portfolio",
     "JavaScript",
     "TypeScript",
@@ -31,27 +30,56 @@ export const metadata: Metadata = {
     "India Web Development",
     "SEO friendly websites",
   ],
-  author: "Jems R Rakholiya",
-  metadataBase: new URL('https://jemsrakholiya.netlify.app'), // Important for absolute URLs below
+  // CORRECTED LINE: Change 'author' to 'authors'
+  authors: [{ name: "Jems Rakholiya", url: "https://jemsrakholiya.netlify.app" }], // Using the recommended array format
+  metadataBase: new URL('https://jemsrakholiya.netlify.app'),
   alternates: {
     canonical: 'https://jemsrakholiya.netlify.app',
   },
   openGraph: {
-    title: "Jems R Rakholiya | Full-Stack Developer & Web Enthusiast",
+    title: "Jems Rakholiya | Full-Stack Developer & Web Enthusiast",
     description: "Explore the portfolio of Jems Rakholiya, a passionate Full-Stack Developer specializing in React, Next.js, Node.js, and modern web technologies.",
-    url: "https://jemsrakholiya.netlify.app", // Your website's URL
+    url: "https://jemsrakholiya.netlify.app/",
     siteName: "Jems Rakholiya's Portfolio",
     locale: "en_US",
-    type: "website", // Or "profile" if it's primarily a personal profile
+    type: "website",
+    images: [
+      {
+        url: "https://jemsrakholiya.netlify.app/og-image.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Jems Rakholiya - Full-Stack Developer Portfolio",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Jems Rakholiya | Full-Stack Developer & Web Enthusiast",
+    description: "Explore the portfolio of Jems Rakholiya, a passionate Full-Stack Developer specializing in React, Next.js, Node.js, and modern web technologies.",
+    creator: "@YourTwitterHandle", // Replace with your actual Twitter handle if you have one
+    images: ["https://jemsrakholiya.netlify.app/twitter-image.jpg"],
+  },
+  robots: {
+    index: true,
+    follow: true,
+    nocache: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      noimageindex: false,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
   },
   themeColor: "#0F172A",
   appleWebApp: {
     capable: true,
-    title: 'Jems R Rakholiya',
+    title: 'Jems Rakholiya Portfolio',
     statusBarStyle: 'default',
-
   },
-  applicationName: "Jems R Rakholiya Portfolio",
+  applicationName: "Jems Rakholiya Portfolio",
+  viewport: "width=device-width, initial-scale=1",
 };
 
 export default function RootLayout({
